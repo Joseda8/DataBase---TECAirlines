@@ -102,4 +102,5 @@ CREATE TABLE PRE_CHECKING_SEATS(
 		id_prechecking_seats int identity(1,1) PRIMARY KEY,
 		id_prechecking int FOREIGN KEY
 		REFERENCES PRE_CHECKING(id_prechecking),
+		seat varchar(10) UNIQUE NOT NULL
 )
