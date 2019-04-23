@@ -5,7 +5,7 @@ AS
       IF UPDATE(seats_left)
 		BEGIN
 			UPDATE FLIGHT
-			SET status = CASE WHEN (seats_left = 0 AND fc_seats_left = 0) THEN 'FULL' ELSE 'ACTIVE' END
+			SET status = CASE WHEN (seats_left = 0 AND fc_seats_left = 0) THEN 'Full' ELSE 'Active' END
 		END
   END
 
