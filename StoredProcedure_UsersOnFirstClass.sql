@@ -3,7 +3,7 @@ AS
 SELECT full_name FROM CUSTOMER
 WHERE(username IN (SELECT username FROM RESERVATION
 					WHERE(flight_id = @flight_id) 
-					AND is_first_class='True')
+					AND is_first_class=True)
 			)
 GO
 
