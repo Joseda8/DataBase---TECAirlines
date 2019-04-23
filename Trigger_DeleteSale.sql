@@ -3,7 +3,7 @@ AFTER UPDATE
 AS
 	BEGIN
 		IF UPDATE(status)
-			DELETE FROM SALE WHERE flight_id = (SELECT flight_id FROM FLIGHT WHERE(status='CLOSED'))
+			DELETE FROM SALE WHERE flight_id = (SELECT flight_id FROM FLIGHT WHERE(status='Closed'))
 	END
 
 /*
