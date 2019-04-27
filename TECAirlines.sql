@@ -58,6 +58,7 @@ CREATE TABLE FLIGHT(
 	fc_price int NOT NULL, 
 	seats_left int NOT NULL, 
 	fc_seats_left int NOT NULL, 
+	miles_price int NOT NULL
 )
 
 CREATE TABLE PAYMENT_METHOD(
