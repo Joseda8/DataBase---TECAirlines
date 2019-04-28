@@ -88,7 +88,8 @@ CREATE TABLE SALE(
 	REFERENCES FLIGHT(flight_id),
 	discount int NOT NULL,
 	start_date date NOT NULL,
-	exp_date date NOT NULL
+	exp_date date NOT NULL,
+	img image NOT NULL
 )
 
 CREATE TABLE PRE_CHECKING(
