@@ -29,9 +29,9 @@ CREATE TABLE CUSTOMER(
 	full_name varchar(50) NOT NULL,
 	phone_numbr varchar(50) UNIQUE NOT NULL,
 	email varchar(50) UNIQUE NOT NULL,
+	is_student bit NOT NULL,
 	username varchar(20) PRIMARY KEY, 
 	password varchar(50) NOT NULL,
-	is_student bit NOT NULL,
 )
 
 CREATE TABLE STUDENTS(
@@ -44,15 +44,15 @@ CREATE TABLE STUDENTS(
 )
 
 CREATE TABLE FLIGHT(
-	flight_id varchar(10) PRIMARY KEY,
 	depart_ap varchar(60) FOREIGN KEY
 	REFERENCES AIRPORT(ap_name) NOT NULL,
 	arrival_ap varchar(60) FOREIGN KEY
 	REFERENCES AIRPORT(ap_name) NOT NULL,
+	capacity int NOT NULL,
+	flight_id varchar(10) PRIMARY KEY,
 	depart_date datetime NOT NULL,
 	plane_id int FOREIGN KEY
 	REFERENCES AIRPLANES(plane_id) NOT NULL,
-	capacity int NOT NULL,
 	status varchar(20) NOT NULL,
 	normal_price int NOT NULL, 
 	fc_price int NOT NULL, 
@@ -83,13 +83,13 @@ CREATE TABLE RESERVATION(
 )
 
 CREATE TABLE SALE(
-	sale_id int identity(1,1) PRIMARY KEY,
 	flight_id varchar(10) FOREIGN KEY 
 	REFERENCES FLIGHT(flight_id),
 	discount int NOT NULL,
 	start_date date NOT NULL,
 	exp_date date NOT NULL,
-	img image NOT NULL
+	sale_id int identity(1,1) PRIMARY KEY,
+	img image NOT NULL,
 )
 
 CREATE TABLE PRE_CHECKING(
