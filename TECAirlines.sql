@@ -18,8 +18,8 @@ CREATE TABLE AIRPLANES(
 
 CREATE TABLE ADMIN(
 	full_name varchar(50) NOT NULL,
-	phone_numbr varchar(30) NOT NULL UNIQUE,
-	email varchar(50) UNIQUE NOT NULL UNIQUE,
+	phone_numbr varchar(30) UNIQUE NOT NULL,
+	email varchar(50) UNIQUE NOT NULL,
 	username varchar(20) PRIMARY KEY, 
 	password varchar(30) NOT NULL,
 	role varchar(20) NOT NULL
@@ -27,8 +27,8 @@ CREATE TABLE ADMIN(
 
 CREATE TABLE CUSTOMER(
 	full_name varchar(50) NOT NULL,
-	phone_numbr varchar(50) UNIQUE NOT NULL UNIQUE,
-	email varchar(50) UNIQUE NOT NULL UNIQUE,
+	phone_numbr varchar(50) UNIQUE NOT NULL,
+	email varchar(50) UNIQUE NOT NULL,
 	username varchar(20) PRIMARY KEY, 
 	password varchar(50) NOT NULL,
 	is_student bit NOT NULL,
