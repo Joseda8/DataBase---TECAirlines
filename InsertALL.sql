@@ -57,7 +57,7 @@ INSERT INTO AIRPORT VALUES ('John F. Kennedy', 'JFK', 'JFK', 'United States')
 INSERT INTO AIRPORT VALUES ('Aeropuerto Internacional de Miami', 'MIA', 'MIA', 'United States')
 INSERT INTO AIRPORT VALUES ('Taba International', 'TabI', 'TCP', 'Egypt')
 INSERT INTO AIRPORT VALUES ('Aeropuerto de Portela', 'Port', 'LIS', 'Portugal')
-INSERT INTO AIRPORT VALUES ('Aeropuerto de Glamoč', 'Glam', 'LQGL', 'Bosnia Herzegovina')
+INSERT INTO AIRPORT VALUES ('Aeropuerto de Glamoc', 'Glam', 'LQGL', 'Bosnia Herzegovina')
 INSERT INTO AIRPORT VALUES ('Aeropuerto de Dublin', 'DUB', 'DUB', 'Ireland')
 INSERT INTO AIRPORT VALUES ('Aeropuerto de Eindhoven', 'Eind', 'EIN', 'Netherlands')
 
