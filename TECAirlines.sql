@@ -62,7 +62,7 @@ CREATE TABLE FLIGHT(
 )
 
 CREATE TABLE PAYMENT_METHOD(
-	payment_id int PRIMARY KEY,
+	payment_id int identity(1,1) PRIMARY KEY,
 	username varchar(20) FOREIGN KEY
 	REFERENCES CUSTOMER(username),
 	card_number varchar(50) NOT NULL,
