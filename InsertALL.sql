@@ -60,7 +60,6 @@ INSERT INTO AIRPORT VALUES ('Aeropuerto de Portela', 'Port', 'LIS', 'Portugal')
 INSERT INTO AIRPORT VALUES ('Aeropuerto de Glamoč', 'Glam', 'LQGL', 'Bosnia Herzegovina')
 INSERT INTO AIRPORT VALUES ('Aeropuerto de Dublin', 'DUB', 'DUB', 'Ireland')
 INSERT INTO AIRPORT VALUES ('Aeropuerto de Eindhoven', 'Eind', 'EIN', 'Netherlands')
-INSERT INTO AIRPORT VALUES ('Aeropuerto de Portela', 'Port', 'LIS', 'Portugal')
 
 INSERT INTO AIRPLANES VALUES ('A380', 853, 1, 170)
 INSERT INTO AIRPLANES VALUES ('B747', 467, 2, 93)
