@@ -12,8 +12,8 @@ CREATE TABLE AIRPORT(
 CREATE TABLE AIRPLANES(
 	model varchar(20) NOT NULL,
 	capacity int NOT NULL,
-	fc_capacity int NOT NULL,
-	plane_id int PRIMARY KEY
+	plane_id int PRIMARY KEY,
+	fc_capacity int NOT NULL
 )
 
 CREATE TABLE ADMIN(
