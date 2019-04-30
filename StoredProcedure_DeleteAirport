@@ -1,0 +1,15 @@
+CREATE PROCEDURE delete_airport @ap_name varchar(60)
+AS
+BEGIN
+	DELETE FROM FLIGHT
+	WHERE(depart_ap=@ap_name OR arrival_ap=@ap_name);
+END
+BEGIN
+	DELETE FROM AIRPORT
+	WHERE(ap_name=@ap_name);
+END
+GO
+
+EXEC delete_airport @ap_name = 'Aalborg'
+
+DROP PROCEDURE delete_airport
