@@ -1,0 +1,28 @@
+CREATE PROCEDURE deletecustomer @username varchar(20)
+AS
+BEGIN
+	DELETE FROM STUDENTS
+	WHERE(username=@username)
+END
+BEGIN
+	DELETE FROM RESERVATION
+	WHERE(username=@username)
+END
+BEGIN
+	DELETE FROM PAYMENT_METHOD
+	WHERE(username=@username)
+END
+BEGIN
+	DELETE FROM PRE_CHECKING
+	WHERE(username=@username)
+END
+BEGIN
+	DELETE FROM CUSTOMER
+	WHERE(username=@username)
+END
+
+GO
+
+EXEC deletecustomer @username = 'Joseda8'
+
+DROP PROCEDURE deletecustomer
