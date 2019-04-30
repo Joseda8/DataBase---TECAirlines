@@ -1,0 +1,16 @@
+CREATE PROCEDURE delete_airplane @plane_id int
+AS
+BEGIN
+	UPDATE FLIGHT
+	SET plane_id = 0
+	WHERE(plane_id=@plane_id);
+END
+BEGIN
+	DELETE FROM AIRPLANES
+	WHERE(plane_id=@plane_id);
+END
+GO
+
+EXEC delete_airplane @plane_id = 1
+
+DROP PROCEDURE delete_airplane
