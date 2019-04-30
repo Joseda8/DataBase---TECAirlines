@@ -88,8 +88,7 @@ CREATE TABLE SALE(
 	discount int NOT NULL,
 	start_date date NOT NULL,
 	exp_date date NOT NULL,
-	sale_id int identity(1,1) PRIMARY KEY,
-	img image NOT NULL,
+	sale_id int identity(1,1) PRIMARY KEY
 )
 
 CREATE TABLE PRE_CHECKING(
