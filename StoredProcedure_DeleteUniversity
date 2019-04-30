@@ -1,0 +1,16 @@
+CREATE PROCEDURE delete_university @university varchar(60)
+AS
+BEGIN
+	UPDATE STUDENTS
+	SET college_name = 'INDEPENDENT'
+	WHERE(college_name=@university)
+END
+BEGIN
+	DELETE FROM UNIVERSITY
+	WHERE(uni_name=@university)
+END
+GO
+
+EXEC delete_university @university = 'ITCR'
+
+DROP PROCEDURE delete_university
