@@ -13,6 +13,10 @@ BEGIN
 	WHERE(username=@username)
 END
 BEGIN
+	DELETE FROM PRE_CHECKING_SEATS
+	WHERE(id_prechecking=(SELECT id_prechecking FROM PRE_CHECKING WHERE(username=@username)))
+END
+BEGIN
 	DELETE FROM PRE_CHECKING
 	WHERE(username=@username)
 END
