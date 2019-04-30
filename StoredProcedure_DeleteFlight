@@ -1,0 +1,20 @@
+CREATE PROCEDURE delete_flight @flight_id varchar(10)
+AS
+BEGIN
+	DELETE FROM SALE
+	WHERE(flight_id=@flight_id);
+
+	DELETE FROM RESERVATION
+	WHERE(flight_id=@flight_id);
+
+	DELETE FROM PRE_CHECKING
+	WHERE(flight_id=@flight_id);
+
+	DELETE FROM FLIGHT
+	WHERE(flight_id=@flight_id);
+END
+GO
+
+EXEC delete_flight @flight_id = '8'
+
+DROP PROCEDURE delete_flight
